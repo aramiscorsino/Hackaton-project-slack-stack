@@ -35,7 +35,7 @@ functions:
          bucket: codepipeline-us-east-1-109774362829
          event: s3:ObjectCreated:*
          rules:
-            - prefix: hackathon-CD-app-sta/BuildArtif
+            - prefix: hackathon-CD-2-app-s/BuildArtif
          existing: true
             
 
