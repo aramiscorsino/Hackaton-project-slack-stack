@@ -27,12 +27,12 @@ functions:
   sent-to-slack-deploy:
     handler: handler.hello
     environment:
-      GROUP: rafabarbosa
+      GROUP: appguide
     layers:
       - {Ref: SlackdeployLambdaLayer}
     events:
       - s3:
-         bucket: codepipeline-us-east-1-483417879513
+         bucket: codepipeline-us-east-1-109774362829
          event: s3:ObjectCreated:*
          rules:
             - prefix: hackathon-CD-app-sta/BuildArtif
