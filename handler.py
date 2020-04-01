@@ -63,7 +63,7 @@ def hello(event, context):
     message = messageToSlack(data)
     
     
-    slack = slackweb.Slack(url='https://hooks.slack.com/services/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')
+    slack = slackweb.Slack(url='https://hooks.slack.com/services/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')
     slack.notify(text=message, channel="#integration-cicd",username="serverless bot", icon_emoji=":squirrel: :shitpit:")
 
     
